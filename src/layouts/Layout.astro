@@ -1,22 +1,19 @@
 ---
+import Seo from "@/components/Seo.astro";
 import Header from "@/components/Header.astro"
 import Hero from "@/components/Hero.astro";
 import Nosotros from "@/components/Nosotros.astro";
 import Preguntas from "@/components/Preguntas.astro";
 import Contacto from "@/components/Contacto.astro";
 import Footer from "@/components/Footer.astro";
+
+import '../styles/base.css'
+import '../styles/fonts.css'
 ---
 
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Inicio</title>
-	</head>
+<html lang="es">
+	<Seo title="crisleodev | Soluciones web" description="Nuestra meta es que tu sitio web conecte tu marca con la excelencia que necesitas para potenciar  tus ventas"/>
 	<body>
 		<!-- Header -->
 		<Header />
