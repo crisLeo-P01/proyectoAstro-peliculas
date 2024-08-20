@@ -1,42 +1,51 @@
 ---
-import ItemsNosotros from "@/components/ItemsNosotros.astro";
-import Clock from '@/icons/Clock.astro';
-import Desktop from "@/icons/Desktop.astro";
-import Server from "@/icons/Server.astro";
 
 ---
-<div class="max-w-7xl mx-auto">
-  <div class="flex">
-    <div>
+
+<div class="max-w-7xl mx-auto px-6 xl:px-0 py-14">
+  <div class="flex gap-8">
+    <div class="basis-1/2 hidden md:flex items-center">
       <img src="/img-sobre-nosotros.png" alt="" srcset="">
     </div>
-    <div>
-      <h2>Potencia tu visibilidad en internet</h2>
-      <p>Potencia tu presencia en línea con diseños web de vanguardia. En nuestra agencia de diseño, creamos experiencias digitales impactantes que conectan tu marca con tu audiencia de manera única. Sitios web elegantes y atractivas, nos especializamos en plasmar la esencia de tu negocio en cada pixel. </p>
-      <p>Trabajamos en estrecha colaboración contigo para entender tus objetivos y trasladarlos a una presencia en línea excepcional. Impulsa tu negocio al siguiente nivel con nuestro diseño web de alto impacto."</p>
+    <div class="basis-full md:basis-1/2 flex flex-col justify-center">
+      <h2 class="text-orange-600 text-2xl">Potencia tu visibilidad en internet</h2>
+      <p class="text-white text-lg leading-5">Potencia tu presencia en línea con diseños web de vanguardia. En nuestra agencia de diseño, creamos experiencias digitales impactantes que conectan tu marca con tu audiencia de manera única. Sitios web elegantes y atractivas, nos especializamos en plasmar la esencia de tu negocio en cada pixel. </p>
+      <p class="text-white text-lg leading-5">Trabajamos en estrecha colaboración contigo para entender tus objetivos y trasladarlos a una presencia en línea excepcional. Impulsa tu negocio al siguiente nivel con nuestro diseño web de alto impacto."</p>
     </div>
   </div>
   
-  <div class="flex flex-col md:flex-row [&>div]:bg-[#231A31] gap-6">
-    <div class="rounded-lg py-7 px-4 flex flex-col items-center relative overflow-hidden">
+  <div class="flex flex-col md:flex-row [&>div]:bg-[#231A31] gap-6 pt-14">
+    <div class="rounded-lg py-7 px-4 flex flex-col gap-3 items-center relative overflow-hidden">
       <img src="/effect-eclipse-rojo.png" alt="" class="absolute -top-20 -left-20">
-      <Clock />
-      <p>Respuesta instantanea</p>
-      <p>Tiempo de respuesta optimizado para acceder a tu sitio web de manera rápida y eficiente</p>
+      <img src="/icons/clock-solid.png" alt="Respuesta instantanea" >
+      <p class="text-white text-center text-2xl title-item">Respuesta instantanea</p>
+      <p class="text-white text-center text-lg">Tiempo de respuesta optimizado para acceder a tu sitio web de manera rápida y eficiente</p>
     </div>
   
-    <div class="rounded-lg py-7 px-4 flex flex-col items-center relative overflow-hidden">
+    <div class="rounded-lg py-7 px-4 flex flex-col gap-3 items-center relative overflow-hidden">
       <img src="/effect-eclipse-rojo.png" alt="" class="absolute -top-20 -left-20">
-      <Desktop />
-      <p>Respuesta instantanea</p>
-      <p>Tiempo de respuesta optimizado para acceder a tu sitio web de manera rápida y eficiente</p>
+      <img src="/icons/desktop.png" alt="Responsive design" >
+      <p class="text-white text-center text-2xl title-item">Respuesta instantanea</p>
+      <p class="text-white text-center text-lg">Tiempo de respuesta optimizado para acceder a tu sitio web de manera rápida y eficiente</p>
     </div>
   
-    <div class="rounded-lg py-7 px-4 flex flex-col items-center relative overflow-hidden">
-      <img src="/effect-eclipse-rojo.png" alt="" class="absolute -top-20 -left-20">
-      <Server />
-      <p>Respuesta instantanea</p>
-      <p>Tiempo de respuesta optimizado para acceder a tu sitio web de manera rápida y eficiente</p>
+    <div class="rounded-lg py-7 px-4 flex flex-col gap-3 items-center relative overflow-hidden">
+      <img src="/effect-eclipse-rojo.png" alt="" class="absolute -top-20 -left-20 text-white">
+      <img src="/icons/server.png" alt="Hosting y correos personalizados" >
+      <p class="text-white text-center text-2xl title-item">Respuesta instantanea</p>
+      <p class="text-white text-center text-lg">Tiempo de respuesta optimizado para acceder a tu sitio web de manera rápida y eficiente</p>
     </div>
   </div>
 </div>
+
+<style>
+  h2 {
+    font-family: 'jost-bold';
+  }
+  p {
+    font-family: 'jost-regular';
+  }
+  .title-item {
+    font-family: 'jost-bold';
+  }
+</style>
