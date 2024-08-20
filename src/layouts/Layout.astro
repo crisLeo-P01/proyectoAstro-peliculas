@@ -1,13 +1,8 @@
 ---
-import MenuLista from '@/components/MenuLista.astro';
-import MenuPrincipal from '@/components/MenuPrincipal.astro';
-import Reproductor from '@/components/Reproductor.astro';
-
-interface Props {
-	title: string;
-}
-
-const { title } = Astro.props;
+import Header from "@/components/Header.astro"
+import Hero from "@/components/Hero.astro";
+import Nosotros from "@/components/Nosotros.astro";
+import Preguntas from "@/components/Preguntas.astro";
 ---
 
 <!doctype html>
@@ -18,37 +13,26 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<title>Inicio</title>
 	</head>
 	<body>
-		<div id="app" class="relative h-screen p-3 gap-2">
-			<aside class="[grid-area:aside] flex-col flex overflow-y-auto bg-neutral-900 rounded-lg">
-				<MenuLista />
-			</aside>
-			<main class="[grid-area:main] overflow-y-auto bg-neutral-900 rounded-lg">
-				<MenuPrincipal />
-			</main>
-			<footer class="[grid-area:player] bg-neutral-900 min-h-[100px] rounded-lg">
-				<Reproductor />
-			</footer>
-		</div>
+		<!-- Header -->
+		<Header />
+		<!-- Hero -->
+		<Hero />
+		<!-- Porque elegirnos -->
+		<Nosotros />
+		<!-- Preguntas Frecuentes -->
+		<Preguntas />
+		<!-- Formulario de contacto -->
+		<!-- Footer -->
 		<slot />
 	</body>
 </html>
-<style>
-	#app {
-		display: grid;
-		grid-template-areas: 
-			"aside main main"
-			"player player player";
-		grid-template-columns: 350px 1fr;
-		grid-template-rows: 1fr auto;
-	}
-</style>
+
 <style is:global>
 	html {
 		font-family: system-ui, sans-serif;
-		background: #13151a;
+		background-color: #0E0B13;
 	}
-
 </style>

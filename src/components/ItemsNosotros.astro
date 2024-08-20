@@ -1,0 +1,18 @@
+---
+
+import type { AstroComponent } from 'astro';
+
+interface Props<T> {
+  content: AstroComponent,
+  title: string,
+  description: string
+}
+
+const { content, title, description } = Astro.props;
+---
+
+<div class="flex flex-col rounded-lg">
+  <i>{content}</i>
+  <p>{title}</p>
+  <p>{description}</p>
+</div>

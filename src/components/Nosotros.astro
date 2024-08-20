@@ -1,0 +1,42 @@
+---
+import ItemsNosotros from "@/components/ItemsNosotros.astro";
+import Clock from '@/icons/Clock.astro';
+import Desktop from "@/icons/Desktop.astro";
+import Server from "@/icons/Server.astro";
+
+---
+<div class="max-w-7xl mx-auto">
+  <div class="flex">
+    <div>
+      <img src="/img-sobre-nosotros.png" alt="" srcset="">
+    </div>
+    <div>
+      <h3>Potencia tu visibilidad en internet</h3>
+      <p>Potencia tu presencia en línea con diseños web de vanguardia. En nuestra agencia de diseño, creamos experiencias digitales impactantes que conectan tu marca con tu audiencia de manera única. Sitios web elegantes y atractivas, nos especializamos en plasmar la esencia de tu negocio en cada pixel. </p>
+      <p>Trabajamos en estrecha colaboración contigo para entender tus objetivos y trasladarlos a una presencia en línea excepcional. Impulsa tu negocio al siguiente nivel con nuestro diseño web de alto impacto."</p>
+    </div>
+  </div>
+  
+  <div class="flex flex-col md:flex-row [&>div]:bg-[#231A31] gap-6">
+    <div class="rounded-lg py-7 px-4 flex flex-col items-center relative overflow-hidden">
+      <img src="/effect-eclipse-rojo.png" alt="" class="absolute -top-20 -left-20">
+      <Clock />
+      <p>Respuesta instantanea</p>
+      <p>Tiempo de respuesta optimizado para acceder a tu sitio web de manera rápida y eficiente</p>
+    </div>
+  
+    <div class="rounded-lg py-7 px-4 flex flex-col items-center relative overflow-hidden">
+      <img src="/effect-eclipse-rojo.png" alt="" class="absolute -top-20 -left-20">
+      <Desktop />
+      <p>Respuesta instantanea</p>
+      <p>Tiempo de respuesta optimizado para acceder a tu sitio web de manera rápida y eficiente</p>
+    </div>
+  
+    <div class="rounded-lg py-7 px-4 flex flex-col items-center relative overflow-hidden">
+      <img src="/effect-eclipse-rojo.png" alt="" class="absolute -top-20 -left-20">
+      <Server />
+      <p>Respuesta instantanea</p>
+      <p>Tiempo de respuesta optimizado para acceder a tu sitio web de manera rápida y eficiente</p>
+    </div>
+  </div>
+</div>
