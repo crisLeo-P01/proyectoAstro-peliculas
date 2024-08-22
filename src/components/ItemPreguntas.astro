@@ -2,13 +2,30 @@
 interface Props {
   pregunta: string,
   respuesta: string,
+  id: string, // Nuevo prop para pasar un id único a cada instancia del componente
 }
 
-const { pregunta, respuesta } = Astro.props;
+const { pregunta, respuesta, id } = Astro.props;
 ---
 
-<div class="flex flex-col gap-9 bg-[#231A31] mb-5 rounded-lg">
-  <p>{pregunta}</p>
-  <span>{respuesta}</span>
+<div class="flex flex-col gap-5 bg-[#231A31] mb-5 rounded-lg py-3 px-2 md:px-8 relative overflow-hidden">
+  <input type="checkbox" id={id} class="hidden peer" />
+  <label for={id} class="flex justify-between cursor-pointer">
+    <p class="text-orange-400 text-md md:text-xl w-60 sm:w-64 md:w-full">{pregunta}</p>
+  </label>
+  <img 
+    src="/icons/angle-down.png" 
+    class="transition-transform duration-500 peer-checked:rotate-180 absolute right-2 md:right-8 top-3 md:top-0"
+    alt="Desplegar"
+  />
+  <span class="text-white text-lg hidden peer-checked:block">{respuesta}</span>
 </div>
 
+<style>
+  p {
+    font-family: 'jost-medium';
+  }
+  span {
+    font-family: 'jost-regular';
+  }
+</style>
