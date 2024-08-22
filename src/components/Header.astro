@@ -25,10 +25,18 @@ function toggleMenu() {
     <!-- Opciones del menú -->
     <nav id="mobile-menu" class="hidden poppins-regular lg:block fixed top-14 left-0 right-0 bg-white flex flex-col items-center space-y-2 lg:static lg:bg-transparent lg:flex-row lg:space-y-0">
       <ul class="flex justify-center text-slate-900 dark:text-white">
-        <li class="text-xl py-1 px-2"><a href="#hero">Inicio</a></li>
-        <li class="text-xl py-1 px-2"><a href="#nosotros">Sobre Nosotros</a></li>
-        <li class="text-xl py-1 px-2"><a href="#preguntas">Preguntas</a></li>
-        <li class="text-xl py-1 px-2"><a href="#contacto">Contacto</a></li>
+        <li class="text-xl py-1 px-2">
+          <a href="#hero" class="nav-link">Inicio</a>
+        </li>
+        <li class="text-xl py-1 px-2">
+          <a href="#nosotros" class="nav-link">Sobre Nosotros</a>
+        </li>
+        <li class="text-xl py-1 px-2">
+          <a href="#preguntas" class="nav-link">Preguntas</a>
+        </li>
+        <li class="text-xl py-1 px-2">
+          <a href="#contacto" class="nav-link">Contacto</a>
+        </li>
       </ul>
     </nav>
   </div>
@@ -38,5 +46,24 @@ function toggleMenu() {
 <style>
   li {
     font-family: 'jost-medium', sans-serif;
+  }
+  :target::before {
+    content: '';
+    display: block;
+    visibility: hidden;
+  }
+
+  :target ~ nav .nav-link[href*="#hero"]::before,
+  :target ~ nav .nav-link[href*="#nosotros"]::before,
+  :target ~ nav .nav-link[href*="#preguntas"]::before,
+  :target ~ nav .nav-link[href*="#contacto"]::before {
+    background-color: transparent;
+  }
+
+  :target ~ nav .nav-link[href*="#hero"]:target,
+  :target ~ nav .nav-link[href*="#nosotros"]:target,
+  :target ~ nav .nav-link[href*="#preguntas"]:target,
+  :target ~ nav .nav-link[href*="#contacto"]:target {
+    @apply bg-orange-600 text-white rounded-xl;
   }
 </style>
