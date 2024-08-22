@@ -26,16 +26,16 @@ function toggleMenu() {
     <nav id="mobile-menu" class="hidden poppins-regular lg:block fixed top-14 left-0 right-0 bg-white flex flex-col items-center space-y-2 lg:static lg:bg-transparent lg:flex-row lg:space-y-0">
       <ul class="flex justify-center text-slate-900 dark:text-white">
         <li class="text-xl py-1 px-2">
-          <a href="#hero" class="nav-link">Inicio</a>
+          <a href="#hero" class="nav-link rounded-md py-0 px-2">Inicio</a>
         </li>
         <li class="text-xl py-1 px-2">
-          <a href="#nosotros" class="nav-link">Sobre Nosotros</a>
+          <a href="#nosotros" class="nav-link rounded-md py-0 px-2">Sobre Nosotros</a>
         </li>
         <li class="text-xl py-1 px-2">
-          <a href="#preguntas" class="nav-link">Preguntas</a>
+          <a href="#preguntas" class="nav-link rounded-md py-0 px-2">Preguntas</a>
         </li>
         <li class="text-xl py-1 px-2">
-          <a href="#contacto" class="nav-link">Contacto</a>
+          <a href="#contacto" class="nav-link rounded-md py-0 px-2">Contacto</a>
         </li>
       </ul>
     </nav>
@@ -64,6 +64,6 @@ function toggleMenu() {
   :target ~ nav .nav-link[href*="#nosotros"]:target,
   :target ~ nav .nav-link[href*="#preguntas"]:target,
   :target ~ nav .nav-link[href*="#contacto"]:target {
-    @apply bg-orange-600 text-white rounded-xl;
+    @apply bg-orange-600 text-white;
   }
 </style>
