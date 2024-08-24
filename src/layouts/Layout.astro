@@ -14,7 +14,7 @@ import '../styles/fonts.css'
 <!doctype html>
 <html lang="es">
 	<Seo title="crisleodev | Soluciones web" description="Nuestra meta es que tu sitio web conecte tu marca con la excelencia que necesitas para potenciar  tus ventas"/>
-	<body>
+	<body class="bg-neutral-900">
 		<!-- Header -->
 		<Header />
 		<!-- Hero -->
@@ -24,6 +24,11 @@ import '../styles/fonts.css'
 		<!-- Preguntas Frecuentes -->
 		<Preguntas />
 		<!-- Formulario de contacto -->
+		 <div class="h-96 bg-orange-600 flex justify-center items-center">
+			<div class="max-w-4xl">
+				<h1 class="text-white text-center text-4xl md:text-4xl uppercase">Impulsa tu presencia online con un sitio web a medida. ¡Contáctanos hoy y lleva tu negocio al siguiente nivel!</h1>
+			</div>
+		 </div>
 		<Contacto />
 		<!-- Footer -->
 		<Footer />
@@ -34,7 +39,6 @@ import '../styles/fonts.css'
 <style is:global>
 	html {
 		font-family: system-ui, sans-serif;
-		background-color: #0E0B13;
 		scroll-behavior: smooth;
 	}
 	body {
@@ -63,4 +67,7 @@ import '../styles/fonts.css'
 											var(--sb-track-color);
 		}
 	}
+	h1, h2 {
+    font-family: 'jost-bold';
+  }
 </style>
