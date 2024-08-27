@@ -1,0 +1,25 @@
+{
+  "name": "crisleodev",
+  "shot_name": "crisleodev",
+  "description": "Nuestra meta es que tu sitio web conecte tu marca con la excelencia que necesitas para potenciar tus ventas",
+  "theme_color": "#E9E9E9",
+  "background_color": "#E9E9E9",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "./android-chrome-96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "./favicon-16x16.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "./favicon-32x32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    }
+  ]
+}

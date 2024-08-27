@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Host
+Host: https://crisleodev.pages.dev/
+
+# Sitemap
+Sitemap: https://crisleodev.pages.dev/sitemap-index.xml
