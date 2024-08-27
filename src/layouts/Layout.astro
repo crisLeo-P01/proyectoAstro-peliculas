@@ -4,6 +4,7 @@ import Header from "@/components/Header.astro"
 import Hero from "@/components/Hero.astro";
 import Nosotros from "@/components/Nosotros.astro";
 import Preguntas from "@/components/Preguntas.astro";
+import Porfolio from "@/components/Porfolio.astro";
 import Contacto from "@/components/Contacto.astro";
 import Footer from "@/components/Footer.astro";
 
@@ -23,12 +24,16 @@ import '../styles/fonts.css'
 		<Nosotros />
 		<!-- Preguntas Frecuentes -->
 		<Preguntas />
-		<!-- Formulario de contacto -->
-		 <div class="h-96 bg-orange-600 flex justify-center items-center">
-			<div class="max-w-4xl">
-				<h1 class="text-white text-center text-4xl md:text-4xl uppercase">Impulsa tu presencia online con un sitio web a medida. ¡Contáctanos hoy y lleva tu negocio al siguiente nivel!</h1>
+
+		<!-- Porfolio -->
+		<Porfolio />
+
+		<div class="h-96 bg-orange-600 flex justify-center items-center">
+			<div class="max-w-4xl px-6 xl:px-0">
+				<h1 class="text-white text-center text-2xl md:text-4xl uppercase">Impulsa tu presencia online con un sitio web a medida. ¡Contáctanos hoy y lleva tu negocio al siguiente nivel!</h1>
 			</div>
-		 </div>
+		</div>
+		<!-- Formulario de contacto -->
 		<Contacto />
 		<!-- Footer -->
 		<Footer />
