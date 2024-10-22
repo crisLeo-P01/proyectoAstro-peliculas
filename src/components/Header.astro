@@ -1,4 +1,5 @@
 ---
+import LogoHero from "@/icons/LogoHero.astro";
 let isOpen = false;
 
 function toggleMenu() {
@@ -6,64 +7,68 @@ function toggleMenu() {
 }
 ---
 
-<header id="header" class="max-w-7xl mx-auto bg-neutral-800 py-2 sticky top-2 z-10 rounded-full px-8 transform transition-all duration-300 ease-in-out">
-  <div class="flex justify-between mx-auto">
-    <div>
-      <img src="/logoHero.png" alt="crisleo dev">
+<header
+  id="header"
+  class="max-w-7xl mx-auto bg-vicso-secondary py-2 sticky top-2 z-10 rounded-full px-8 transform transition-all duration-300 ease-in-out"
+>
+    <div class="flex justify-between mx-auto">
+    <div class="w-12">
+        <LogoHero />
     </div>
 
     <!-- Botón del menú hamburguesa -->
-    <button 
-      id="menu-toggle" 
-      class="lg:hidden flex items-center text-white poppins-semibold" 
-      aria-label="Toggle menu">
-      <!-- Icono de menú hamburguesa -->
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
+    <button
+        id="menu-toggle"
+        class="lg:hidden flex items-center text-white poppins-semibold"
+        aria-label="Toggle menu"
+    >
+        <!-- Icono de menú hamburguesa -->
+        <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        >
+        <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
     </button>
     <!-- Opciones del menú -->
-    <nav id="mobile-menu" class="hidden poppins-regular lg:block fixed top-14 left-0 right-0 bg-white flex flex-col items-center space-y-2 lg:static lg:bg-transparent lg:flex-row lg:space-y-0">
-      <ul class="flex justify-center text-slate-900 dark:text-white">
+    <nav
+        id="mobile-menu"
+        class="hidden poppins-regular lg:block fixed top-14 left-0 right-0 bg-white flex flex-col items-center space-y-2 lg:static lg:bg-transparent lg:flex-row lg:space-y-0"
+    >
+        <ul class="flex justify-center text-slate-900 dark:text-white">
         <li class="text-lg py-1 px-2">
-          <a href="#hero" class="nav-link rounded-md py-0 px-2">Inicio</a>
+            <a href="#hero" class="nav-link rounded-md py-0 px-2">INICIO</a>
         </li>
         <li class="text-lg py-1 px-2">
-          <a href="#nosotros" class="nav-link rounded-md py-0 px-2">Sobre Nosotros</a>
+            <a href="#soluciones" class="nav-link rounded-md py-0 px-2">SOLUCIONES</a>
         </li>
         <li class="text-lg py-1 px-2">
-          <a href="#preguntas" class="nav-link rounded-md py-0 px-2">Preguntas</a>
+            <a href="#nosotros" class="nav-link rounded-md py-0 px-2">NOSOTROS</a>
         </li>
         <li class="text-lg py-1 px-2">
-          <a href="#contacto" class="nav-link rounded-md py-0 px-2">Contacto</a>
+            <a href="#preguntas" class="nav-link rounded-md py-0 px-2">PREGUNTAS</a>
         </li>
-      </ul>
+        <li class="text-lg py-1 px-2">
+            <a href="#contacto" class="nav-link rounded-md py-0 px-2">CONTACTO</a>
+        </li>
+        </ul>
     </nav>
-  </div>
+    </div>
 </header>
 
-<script src='../../public/scripts/header.js'></script>
+<script src="../../public/scripts/header.js"></script>
+
 <style>
-  li {
-    font-family: 'jost-medium', sans-serif;
-  }
-  :target::before {
-    content: '';
-    display: block;
-    visibility: hidden;
-  }
+    li {
+    font-family: "jost-medium", sans-serif;
+    }
 
-  :target ~ nav .nav-link[href*="#hero"]::before,
-  :target ~ nav .nav-link[href*="#nosotros"]::before,
-  :target ~ nav .nav-link[href*="#preguntas"]::before,
-  :target ~ nav .nav-link[href*="#contacto"]::before {
-    background-color: transparent;
-  }
-
-  :target ~ nav .nav-link[href*="#hero"]:target,
-  :target ~ nav .nav-link[href*="#nosotros"]:target,
-  :target ~ nav .nav-link[href*="#preguntas"]:target,
-  :target ~ nav .nav-link[href*="#contacto"]:target {
-    @apply bg-orange-600 text-white;
-  }
+    
 </style>

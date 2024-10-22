@@ -8,7 +8,7 @@ interface Props {
 const { pregunta, respuesta, id } = Astro.props;
 ---
 
-<div class="flex flex-col bg-neutral-800 mb-5 rounded-lg py-3 px-2 md:px-8 relative overflow-hidden">
+<div class="flex flex-col bg-vicso-secondary mb-5 rounded-lg py-3 px-2 md:px-8 relative overflow-hidden">
   <input type="checkbox" id={id} class="hidden peer" />
   <label for={id} class="flex justify-between cursor-pointer">
     <p class="text-neutral-100 text-md md:text-xl w-60 sm:w-64 md:w-full">{pregunta}</p>

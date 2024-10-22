@@ -2,41 +2,42 @@
 import Behance from "@/icons/Behance.astro";
 import Instagram from "@/icons/Instagram.astro";
 import Pinterest from "@/icons/Pinterest.astro";
+import Logo from "@/icons/Logo.astro";
 ---
 
 <div>
-  <div class="flex flex-col md:flex-row items-center md:justify-between gap-5 max-w-7xl mx-auto py-24 px-36">
+    <div class="flex flex-col md:flex-row items-center md:justify-between gap-5 max-w-7xl mx-auto py-24 px-36">
     <div>
-      <h5 class="text-white text-2xl text-center md:text-start">Navegacion</h5>
-      <ul class="[&>li]:text-white text-center md:text-start">
+        <h5 class="text-white text-2xl text-center md:text-start">Navegacion</h5>
+        <ul class="[&>li]:text-white text-center md:text-start">
         <li class="hover:text-orange-500"><a href="#hero">Inicio</a></li>
         <li class="hover:text-orange-500"><a href="#nosotros">Sobre Nosotros</a></li>
         <li class="hover:text-orange-500"><a href="#preguntas">Preguntas</a></li>
         <li class="hover:text-orange-500"><a href="#contacto">Contacto</a></li>
-      </ul>
+        </ul>
     </div>
     <div>
-      <img src="/logo-small.png" alt="crisleodev">
+        <Logo />
     </div>
     <div class="flex items-center gap-3">
-      <a class="text-white hover:text-orange-600" href="#" target="_blank">
+        <a class="text-white hover:text-blue-500" href="#" target="_blank">
         <Instagram />
-      </a>
-      <a class="text-white hover:text-orange-600" href="#" target="_blank">
+        </a>
+        <a class="text-white hover:text-blue-500" href="#" target="_blank">
         <Pinterest />
-      </a>
-      <a class="text-white hover:text-orange-600" href="#" target="_blank">
+        </a>
+        <a class="text-white hover:text-blue-500" href="#" target="_blank">
         <Behance />
-      </a>
+        </a>
     </div>
-  </div>
+    </div>
 </div>
 
 <style>
-  h5 {
-    font-family: 'jost-bold';
-  }
-  li {
-    font-family: 'jost-medium';
-  }
+    h5 {
+        font-family: 'jost-bold';
+    }
+    li {
+        font-family: 'jost-medium';
+    }
 </style>

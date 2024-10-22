@@ -18,9 +18,9 @@ function setActiveLink() {
     const offsetHeight = section.offsetHeight;
 
     if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
-      link.classList.add("bg-orange-600", "text-white");
+      link.classList.add("bg-vicso-blue", "text-white");
     } else {
-      link.classList.remove("bg-orange-600", "text-white");
+      link.classList.remove("bg-vicso-blue", "text-white");
     }
   });
 }

@@ -2,9 +2,9 @@
 import Seo from "@/components/Seo.astro";
 import Header from "@/components/Header.astro"
 import Hero from "@/components/Hero.astro";
+import Soluciones from "@/components/Soluciones.astro";
 import Nosotros from "@/components/Nosotros.astro";
 import Preguntas from "@/components/Preguntas.astro";
-import Porfolio from "@/components/Porfolio.astro";
 import Contacto from "@/components/Contacto.astro";
 import Footer from "@/components/Footer.astro";
 
@@ -15,20 +15,23 @@ import '../styles/fonts.css'
 <!doctype html>
 <html lang="es">
 	<Seo title="crisleodev | Soluciones web" description="Nuestra meta es que tu sitio web conecte tu marca con la excelencia que necesitas para potenciar tus ventas"/>
-	<body class="bg-neutral-900">
+	<body>
 		<!-- Header -->
 		<Header />
+		
 		<!-- Hero -->
 		<Hero />
+
 		<!-- Porque elegirnos -->
-		<Nosotros />
+		<Soluciones />
+
+		<!-- Nosotros -->
+		 <Nosotros />
+
 		<!-- Preguntas Frecuentes -->
 		<Preguntas />
 
-		<!-- Porfolio -->
-		<Porfolio />
-
-		<div class="h-96 bg-orange-600 flex justify-center items-center">
+		<div class="h-96 flex justify-center items-center mensaje-accion">
 			<div class="max-w-4xl px-6 xl:px-0">
 				<h1 class="text-white text-center text-2xl md:text-4xl uppercase">Impulsa tu presencia online con un sitio web a medida. ¡Contáctanos hoy y lleva tu negocio al siguiente nivel!</h1>
 			</div>
@@ -47,8 +50,9 @@ import '../styles/fonts.css'
 		scroll-behavior: smooth;
 	}
 	body {
+		background-color: #20222B;
 		--sb-track-color: #232E33;
-		--sb-thumb-color: #ea580c;
+		--sb-thumb-color: #3271F8;
 		--sb-size: 14px;
 	}
 
@@ -73,6 +77,21 @@ import '../styles/fonts.css'
 		}
 	}
 	h1, h2 {
-    font-family: 'jost-bold';
-  }
+    	font-family: 'jost-bold';
+  	}
+	.mensaje-accion {
+		background-color: #3271F8;
+	}
+	.bg-vicso-primary {
+        background-color: #20222B;
+    }
+	.bg-vicso-secondary {
+        background-color: #272A34;
+    }
+	.bg-vicso-blue {
+        background-color: #3271F8;
+    }
+	.color-vicso-blue {
+		color: #3271F8;
+	}
 </style>

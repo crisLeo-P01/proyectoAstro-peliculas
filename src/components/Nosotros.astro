@@ -1,48 +1,32 @@
 ---
-
+import Logo from "@/icons/Logo.astro"
 ---
 
 <div class="max-w-7xl mx-auto px-6 xl:px-0 py-12" id="nosotros">
-  <div class="flex gap-8">
-    <div class="basis-1/2 hidden md:flex items-center">
-      <img src="/img-sobre-nosotros.png" alt="Sobre Nosotros">
+    <h2 class="color-vicso-blue text-3xl md:text-4xl text-center">NOSOTROS</h2>
+    <div class="flex flex-row gap-4 items-center pt-3">
+        <div class="flex-1">
+            <p class="text-white text-xl leading-6">
+                Con más de 6 años de experiencia en el desarrollo web, ofrecemos soluciones personalizadas para cada proyecto, 
+                asegurando que cada detalle esté alineado con las necesidades y objetivos de nuestros clientes. Nos especializamos 
+                en la creación de sitios web únicos, optimizados y escalables, proporcionando una experiencia de usuario fluida y 
+                atractiva. Desde pequeñas empresas hasta grandes proyectos, trabajamos de la mano contigo para crear una presencia 
+                digital sólida y efectiva que refleje tu visión y valores.
+            </p>
+            <p class="text-white text-xl leading-6">
+                Nuestro enfoque se basa en el compromiso con la calidad y la innovación, utilizando las últimas tecnologías para entregar 
+                resultados que destacan en un entorno digital competitivo. Ya sea que necesites un sitio corporativo, una tienda en línea 
+                o una plataforma compleja, estamos aquí para hacerlo realidad.
+            </p>
+        </div>
+        <div class="flex-1 justify-items-center hidden md:block">
+            <Logo />
+        </div>
     </div>
-    <div class="basis-full md:basis-1/2 flex flex-col justify-center">
-      <h2 class="text-orange-600 text-3xl md:text-4xl mb-2">Potencia tu visibilidad en internet</h2>
-      <p class="text-white text-lg leading-5">Potencia tu presencia en línea con diseños web de vanguardia. En nuestra agencia de diseño, creamos experiencias digitales impactantes que conectan tu marca con tu audiencia de manera única. Sitios web elegantes y atractivas, nos especializamos en plasmar la esencia de tu negocio en cada pixel. </p>
-      <p class="text-white text-lg leading-5">Trabajamos en estrecha colaboración contigo para entender tus objetivos y trasladarlos a una presencia en línea excepcional. Impulsa tu negocio al siguiente nivel con nuestro diseño web de alto impacto."</p>
-    </div>
-  </div>
-  
-  <div class="flex flex-col md:flex-row [&>div]:bg-neutral-800 gap-6 pt-14">
-    <div class="rounded-lg py-7 px-4 flex flex-col gap-3 items-center relative overflow-hidden">
-      <img src="/effect-eclipse-rojo.png" alt="" class="absolute -top-20 -left-20 select-none">
-      <img src="/icons/clock-solid.png" alt="Respuesta instantanea" >
-      <p class="text-white text-center text-2xl title-item">Respuesta instantanea</p>
-      <p class="text-white text-center text-lg">Tiempo de respuesta optimizado para acceder a tu sitio web de manera rápida y eficiente</p>
-    </div>
-  
-    <div class="rounded-lg py-7 px-4 flex flex-col gap-3 items-center relative overflow-hidden">
-      <img src="/effect-eclipse-rojo.png" alt="" class="absolute -top-20 -left-20 select-none">
-      <img src="/icons/desktop.png" alt="Responsive design" >
-      <p class="text-white text-center text-2xl title-item">Responsive design</p>
-      <p class="text-white text-center text-lg">Tu sitio adaptable a todos los dispositivos, sea desde un celular, notebook o PC</p>
-    </div>
-  
-    <div class="rounded-lg py-7 px-4 flex flex-col gap-3 items-center relative overflow-hidden">
-      <img src="/effect-eclipse-rojo.png" alt="" class="absolute -top-20 -left-20 select-none">
-      <img src="/icons/server.png" alt="Hosting y correos personalizados" >
-      <p class="text-white text-center text-2xl title-item">Hosting y correos personalizados</p>
-      <p class="text-white text-center text-lg">El mejor hosting para que tu sitio web este siempre en línea y segura. Cuenta con correo corporativos</p>
-    </div>
-  </div>
 </div>
 
 <style>
-  p {
-    font-family: 'jost-regular';
-  }
-  .title-item {
-    font-family: 'jost-bold';
-  }
+    p {
+        font-family: 'jost-regular';
+    }
 </style>
