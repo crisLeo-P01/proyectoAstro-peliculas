@@ -1,4 +1,12 @@
-<svg width="298" height="257" viewBox="0 0 298 257" fill="none" xmlns="http://www.w3.org/2000/svg">
+---
+interface Props {
+  width: string
+}
+
+const { width } = Astro.props;
+---
+
+<svg width={ width } height="257px" viewBox="0 0 298 257" fill="none" xmlns="http://www.w3.org/2000/svg">
   <g clip-path="url(#clip0_531_162)">
     <path
       d="M204.5 226.211V34.7896C204.5 26.7791 196.425 21.5691 189.562 25.1515L6.20569 120.862C-1.40191 124.833 -1.40191 136.167 6.20579 140.138L189.562 235.849C196.425 239.431 204.5 234.221 204.5 226.211Z"
